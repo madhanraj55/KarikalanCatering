@@ -13,7 +13,7 @@ A luxury, fully responsive frontend website designed for **Pattanam Karikalan Ca
   - **Mobile:** Sticky bottom action bar with 1-tap Call, WhatsApp, and Quick Quote buttons; responsive collapsible drawer menu.
 - **Interactive Menu Showcase:** Category filtering for Traditional Elai Saapadu, Royal Biryani & Non-Veg, Wedding Buffets, and Live Dosa/Sweet counters.
 - **Instant Budget Calculator:** Dynamic guests slider (50 - 3000+ persons) that calculates estimated pricing live without any backend.
-- **1-Click WhatsApp Booking:** Converts guest details and chosen package into a pre-formatted WhatsApp message ready to send directly to `+91 98945 79444`.
+- **1-Click WhatsApp Booking:** Converts guest details and chosen package into a pre-formatted WhatsApp message ready to send directly to `+91 96776 76898`.
 - **Ready for GitHub Pages:** Pure static HTML5, CSS3, and JavaScript — no build steps or server required.
 
 ---
@@ -40,7 +40,7 @@ A luxury, fully responsive frontend website designed for **Pattanam Karikalan Ca
 ---
 
 ## 📞 Business Details
-- **Founder & MD Contact:** +91 98945 79444
+- **Founder & MD Contact:** +91 96776 76898
 - **Email:** karikalancatering@gmail.com
 - **Website:** www.karikalancatering.com
 - **Location:** Pattanam, Rasipuram, Namakkal, Tamil Nadu
