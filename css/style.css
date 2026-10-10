@@ -1316,7 +1316,15 @@ body {
   }
 
   .board-img-display {
-    max-width: 220px;
+    max-width: 220px;`
+  }
+
+  .carousel-btn.prev {
+    left: -18px;
+  }
+  
+  .carousel-btn.next {
+    right: -18px;
   }
 }
 
