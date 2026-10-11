@@ -282,7 +282,7 @@ document.addEventListener('DOMContentLoaded', () => {
 ---------------------------------------
 Hello Karikalan Catering Team, I would like to check availability and confirm details for our celebration!`;
 
-      const waNumber = '919677676898';
+      const waNumber = '919894579444';
       const waUrl = `https://wa.me/${waNumber}?text=${encodeURIComponent(message)}`;
 
       window.open(waUrl, '_blank');

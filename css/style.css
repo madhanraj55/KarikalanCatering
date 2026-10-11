@@ -510,7 +510,7 @@ body {
 
 /* Interactive Food Carousel Section */
 .carousel-section {
-  padding: 90px 0;
+  padding: 40px 0;
   background: var(--bg-secondary);
   position: relative;
 }
@@ -662,7 +662,7 @@ body {
   background: #ffffff;
   border-top: 1px solid var(--border-light);
   border-bottom: 1px solid var(--border-light);
-  padding: 85px 0;
+  padding: 40px 0;
 }
 
 @media(max-width:768px) {
@@ -767,7 +767,7 @@ body {
 
 /* Menu & Feast Section (White Cards) */
 .menu-section {
-  padding: 90px 0;
+  padding: 40px 0;
   background: #ffffff;
   position: relative;
 }
@@ -1297,7 +1297,7 @@ body {
 .footer {
   background: #ffffff;
   border-top: 1px solid var(--border-light);
-  padding: 60px 0 28px;
+  padding: 40px 0 28px;
 }
 
 .footer-grid {
@@ -1421,20 +1421,28 @@ body {
 }
 
 .footer-copy {
-  margin-top: 45px;
-  padding-top: 24px;
+  margin-top: 25px;
+  padding-top: 15px;
   border-top: 1px solid rgba(0, 0, 0, 0.06);
   color: var(--text-muted);
   font-size: 0.85rem;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 5px;
 }
 
 .footer-copy p {
   margin: 0;
+  text-align: center;
+  margin-left: 77px;
+}
+
+@media (max-width: 768px) {
+  .footer-copy p {
+    margin-left: 35px;
+  }
 }
 
 /* Responsive Media Queries */
@@ -1611,7 +1619,8 @@ body {
   .footer-copy {
     flex-direction: column;
     text-align: center;
-    gap: 10px;
+    gap: 0px;
+    margin-left: -27px;
   }
 }
 
