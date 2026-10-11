@@ -1118,6 +1118,109 @@ body {
   color: var(--royal-maroon);
 }
 
+.contact-map-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-secondary);
+  border-radius: 20px;
+  padding: 24px;
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-sm);
+  height: 100%;
+}
+
+.contact-map-frame {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border-light);
+  margin-bottom: 18px;
+}
+
+/* Desktop Only: Fills space below WhatsApp inquiry without affecting mobile */
+.contact-desktop-filler {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px dashed var(--border-light);
+}
+
+.contact-extra-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.contact-mini-badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #ffffff;
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border-light);
+}
+
+.contact-mini-badge i {
+  font-size: 1.15rem;
+  flex-shrink: 0;
+}
+
+.contact-mini-badge small {
+  display: block;
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  line-height: 1.1;
+}
+
+.contact-mini-badge span {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+.contact-hubs-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.contact-hubs-title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--royal-maroon);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.contact-hubs-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.contact-hubs-tags span {
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  padding: 3px 9px;
+  border-radius: 6px;
+  font-size: 0.74rem;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
 /* Floating Action Buttons */
 .floating-btn {
   position: fixed;
@@ -1159,20 +1262,179 @@ body {
   background: linear-gradient(135deg, var(--chola-gold-accent) 0%, var(--chola-gold-bright) 100%);
 }
 
-/* Footer (Clean Off-White) */
+/* Scroll To Top Button (Positioned directly above WhatsApp Float) */
+.scroll-top-btn {
+  right: 25px;
+  bottom: 90px;
+  background: var(--royal-maroon);
+  color: #ffffff;
+  border: 2px solid var(--chola-gold);
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(15px);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease, background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  font-size: 1.25rem;
+  padding: 0;
+  outline: none;
+}
+
+.scroll-top-btn.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.scroll-top-btn:hover {
+  background: var(--royal-maroon-dark);
+  color: var(--chola-gold-bright);
+  border-color: #ffffff;
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(141, 16, 41, 0.45);
+}
+
+/* Footer (Clean Off-White with Modern Multi-Column Grid) */
 .footer {
   background: #ffffff;
   border-top: 1px solid var(--border-light);
-  padding: 50px 0 25px;
-  text-align: center;
+  padding: 60px 0 28px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1.2fr 1.2fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.footer-brand-logo {
+  height: 54px;
+  object-fit: contain;
+  align-self: flex-start;
+}
+
+.footer-brand-desc {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.footer-brand-address {
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  line-height: 1.5;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 0;
+}
+
+.footer-brand-address i {
+  color: var(--chola-gold);
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+
+.footer-col h4 {
+  font-family: var(--font-royal);
+  font-size: 1.05rem;
+  color: var(--royal-maroon);
+  letter-spacing: 0.5px;
+  margin-bottom: 18px;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.footer-col h4::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 28px;
+  height: 2px;
+  background: var(--chola-gold);
+  border-radius: 2px;
+}
+
+.footer-links-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-links-list li a {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-links-list li a:hover {
+  color: var(--royal-maroon);
+  transform: translateX(4px);
+}
+
+.footer-links-list li a i {
+  font-size: 0.72rem;
+  color: var(--chola-gold);
+}
+
+.footer-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: var(--text-secondary);
+  font-size: 0.88rem;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.footer-contact-item i {
+  color: var(--royal-maroon);
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
+.footer-contact-item a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.footer-contact-item a:hover {
+  color: var(--royal-maroon);
 }
 
 .footer-copy {
-  margin-top: 30px;
-  padding-top: 20px;
+  margin-top: 45px;
+  padding-top: 24px;
   border-top: 1px solid rgba(0, 0, 0, 0.06);
   color: var(--text-muted);
   font-size: 0.85rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.footer-copy p {
+  margin: 0;
 }
 
 /* Responsive Media Queries */
@@ -1182,6 +1444,20 @@ body {
   .contact-card-main,
   .heritage-grid {
     grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+  }
+
+  .contact-desktop-filler {
+    display: none !important;
+  }
+
+  .contact-map-frame {
+    height: 260px;
+    margin-bottom: 20px;
   }
 
   .nav-links {
@@ -1316,7 +1592,7 @@ body {
   }
 
   .board-img-display {
-    max-width: 220px;`
+    max-width: 220px;
   }
 
   .carousel-btn.prev {
@@ -1325,6 +1601,17 @@ body {
   
   .carousel-btn.next {
     right: -18px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .footer-copy {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
   }
 }
 

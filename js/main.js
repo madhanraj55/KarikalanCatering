@@ -288,4 +288,50 @@ Hello Karikalan Catering Team, I would like to check availability and confirm de
       window.open(waUrl, '_blank');
     });
   }
+
+  // 8. One-Click Scroll to Top Button (Gentle, slow ease-in-out scroll)
+  const scrollTopBtn = document.getElementById('scrollTopBtn');
+  if (scrollTopBtn) {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        scrollTopBtn.classList.add('visible');
+      } else {
+        scrollTopBtn.classList.remove('visible');
+      }
+    }, { passive: true });
+
+    scrollTopBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const startPosition = window.scrollY;
+      if (startPosition <= 0) return;
+
+      const duration = 1200; // 1.2s for a slow, gentle glide to top
+      let startTime = null;
+      const html = document.documentElement;
+      const prevScrollBehavior = html.style.scrollBehavior;
+      html.style.scrollBehavior = 'auto'; // Temporarily disable CSS smooth behavior for custom duration
+
+      function easeInOutCubic(t) {
+        return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+      }
+
+      function step(currentTime) {
+        if (!startTime) startTime = currentTime;
+        const timeElapsed = currentTime - startTime;
+        const progress = Math.min(timeElapsed / duration, 1);
+        const ease = easeInOutCubic(progress);
+
+        window.scrollTo(0, Math.round(startPosition * (1 - ease)));
+
+        if (timeElapsed < duration) {
+          requestAnimationFrame(step);
+        } else {
+          window.scrollTo(0, 0);
+          html.style.scrollBehavior = prevScrollBehavior;
+        }
+      }
+
+      requestAnimationFrame(step);
+    });
+  }
 });

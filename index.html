@@ -598,40 +598,83 @@
           </div>
         </div>
 
-        <div
-          style="display: flex; flex-direction: column; justify-content: center; background: var(--bg-secondary); border-radius: 20px; padding: 28px; border: 1px solid var(--border-light);">
-          <h3 class="font-royal text-maroon" style="font-size: 1.35rem; margin-bottom: 12px;">Service Locations Covered
-          </h3>
-          <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 20px;">
-            We offer premier wedding catering throughout Tamil Nadu:
-          </p>
-          <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 25px;">
-            <span
-              style="background: #ffffff; border: 1px solid var(--border-light); padding: 6px 14px; border-radius: 8px; font-size: 0.88rem; color: var(--text-primary); font-weight: 600;">Rasipuram</span>
-            <span
-              style="background: #ffffff; border: 1px solid var(--border-light); padding: 6px 14px; border-radius: 8px; font-size: 0.88rem; color: var(--text-primary); font-weight: 600;">Namakkal</span>
-            <span
-              style="background: #ffffff; border: 1px solid var(--border-light); padding: 6px 14px; border-radius: 8px; font-size: 0.88rem; color: var(--text-primary); font-weight: 600;">Salem</span>
-            <span
-              style="background: #ffffff; border: 1px solid var(--border-light); padding: 6px 14px; border-radius: 8px; font-size: 0.88rem; color: var(--text-primary); font-weight: 600;">Erode</span>
-            <span
-              style="background: #ffffff; border: 1px solid var(--border-light); padding: 6px 14px; border-radius: 8px; font-size: 0.88rem; color: var(--text-primary); font-weight: 600;">Trichy</span>
-            <span
-              style="background: #ffffff; border: 1px solid var(--border-light); padding: 6px 14px; border-radius: 8px; font-size: 0.88rem; color: var(--text-primary); font-weight: 600;">Coimbatore</span>
-            <span
-              style="background: #ffffff; border: 1px solid var(--border-light); padding: 6px 14px; border-radius: 8px; font-size: 0.88rem; color: var(--text-primary); font-weight: 600;">Chennai</span>
+        <div class="contact-map-card">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px;">
+            <h3 class="font-royal text-maroon" style="font-size: 1.35rem; margin: 0;">Our Location</h3>
+            <span style="font-size: 0.85rem; color: var(--text-muted); font-weight: 500;">
+              <i class="fa-solid fa-map-pin text-gold" style="margin-right: 4px;"></i> Pattanam, Rasipuram
+            </span>
+          </div>
+
+          <!-- Google Maps Embed -->
+          <div class="contact-map-frame">
+            <iframe
+              title="Pattanam Karikalan Catering Location Map"
+              width="100%"
+              height="100%"
+              style="border: 0; display: block;"
+              loading="lazy"
+              allowfullscreen
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://maps.google.com/maps?q=Pattanam%2C%20Rasipuram%2C%20Namakkal%20District%2C%20Tamil%20Nadu%20637408&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=&amp;output=embed">
+            </iframe>
           </div>
 
           <a href="https://wa.me/919677676898?text=Hi%20Karikalan%20Catering,%20I%20am%20looking%20to%20book%20catering%20for%20an%20event."
             target="_blank" class="btn btn-whatsapp" style="width: 100%;">
             <i class="fa-brands fa-whatsapp"></i> Instant WhatsApp Inquiry
           </a>
+
+          <!-- Desktop Only: Fills space below WhatsApp button without touching mobile view -->
+          <div class="contact-desktop-filler">
+            <div class="contact-extra-grid">
+              <div class="contact-mini-badge">
+                <i class="fa-solid fa-clock text-gold"></i>
+                <div>
+                  <small>Available Timings</small>
+                  <span>7:00 AM – 10:30 PM All Days</span>
+                </div>
+              </div>
+              <div class="contact-mini-badge">
+                <i class="fa-solid fa-calendar-check text-gold"></i>
+                <div>
+                  <small>Muhurtham Dates</small>
+                  <span>Advance Booking Open</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-hubs-bar">
+              <span class="contact-hubs-title"><i class="fa-solid fa-truck-fast text-gold"></i> Service Hubs Across TN:</span>
+              <div class="contact-hubs-tags">
+                <span>Rasipuram</span>
+                <span>Namakkal</span>
+                <span>Salem</span>
+                <span>Erode</span>
+                <span>Trichy</span>
+                <span>Coimbatore</span>
+                <span>Tirunelveli</span>
+                <span>Madurai</span>
+                <span>Dindigul</span>
+                <span>Tiruppur</span>
+                <span>Thanjavur</span>
+                <span>Kancheepuram</span>
+                <span>Tiruvannamalai</span>
+                <span>Pudhukkottai</span>
+                <span>Karur</span>
+                <span>Ooty</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Floating Action Buttons -->
+  <button id="scrollTopBtn" class="floating-btn scroll-top-btn" aria-label="Scroll to top" title="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
   <a href="https://wa.me/919677676898?text=Hello%20Karikalan%20Catering,%20I%20want%20to%20enquire%20for%20catering"
     class="floating-btn whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
     <i class="fa-brands fa-whatsapp"></i>
@@ -643,17 +686,89 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <div style="display: flex; justify-content: center; margin-bottom: 16px;">
-        <img src="images/karikalan_logo.png" alt="Pattanam Karikalan Catering & Event"
-          style="height: 52px; object-fit: contain;">
-      </div>
-      <p style="color: var(--text-muted); font-size: 0.9rem; max-width: 500px; margin: 0 auto;">
-        Authentic South Indian Royal Catering<br>Pattanam, Rasipuram, Namakkal, Tamil Nadu.
-      </p>
+      <div class="footer-grid">
+        <!-- Left Side: Brand Logo & Information -->
+        <div class="footer-brand">
+          <a href="#home" style="display: inline-block;">
+            <img src="images/karikalan_logo.png" alt="Pattanam Karikalan Catering & Event" class="footer-brand-logo">
+          </a>
+          <p class="footer-brand-desc">
+            Authentic South Indian Royal Catering
+          </p>
+          <p class="footer-brand-address">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Pattanam, Rasipuram, Namakkal District, Tamil Nadu - 637408.</span>
+          </p>
+          <div style="display: flex; gap: 10px; margin-top: 6px; flex-wrap: wrap;">
+            <a href="https://wa.me/919677676898" target="_blank" class="btn btn-whatsapp"
+              style="padding: 8px 16px; font-size: 0.85rem; border-radius: 8px;">
+              <i class="fa-brands fa-whatsapp"></i> WhatsApp Us
+            </a>
+            <a href="tel:+919677676898" class="btn btn-outline"
+              style="padding: 8px 16px; font-size: 0.85rem; border-radius: 8px;">
+              <i class="fa-solid fa-phone"></i> Call
+            </a>
+          </div>
+        </div>
 
+        <!-- Right Side Column 1: Quick Navigation -->
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="#home"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+            <li><a href="#heritage"><i class="fa-solid fa-angle-right"></i> Chola Heritage</a></li>
+            <li><a href="#showcase"><i class="fa-solid fa-angle-right"></i> Grand Gallery</a></li>
+            <li><a href="#menu"><i class="fa-solid fa-angle-right"></i> Royal Menu</a></li>
+            <li><a href="#estimate"><i class="fa-solid fa-angle-right"></i> Budget Calculator</a></li>
+            <li><a href="#contact"><i class="fa-solid fa-angle-right"></i> Contact & Location</a></li>
+          </ul>
+        </div>
+
+        <!-- Right Side Column 2: Catering Specialties -->
+        <div class="footer-col">
+          <h4>Our Specialties</h4>
+          <ul class="footer-links-list">
+            <li><a href="#menu"><i class="fa-solid fa-angle-right"></i> Traditional Elai Saapadu</a></li>
+            <li><a href="#menu"><i class="fa-solid fa-angle-right"></i> Royal Non-Veg & Biryani</a></li>
+            <li><a href="#menu"><i class="fa-solid fa-angle-right"></i> Wedding Reception Buffet</a></li>
+            <li><a href="#menu"><i class="fa-solid fa-angle-right"></i> Live Dosa & Sweet Counters</a></li>
+            <li><a href="#estimate"><i class="fa-solid fa-angle-right"></i> Muhurtham Pre-Booking</a></li>
+            <li><a href="#contact"><i class="fa-solid fa-angle-right"></i> Tamil Nadu Coverage</a></li>
+          </ul>
+        </div>
+
+        <!-- Right Side Column 3: Contact & Hours -->
+        <div class="footer-col">
+          <h4>Get in Touch</h4>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Direct Line</div>
+              <a href="tel:+919677676898">+91 96776 76898</a>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Email</div>
+              <a href="mailto:karikalancatering@gmail.com">karikalancatering@gmail.com</a>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-clock"></i>
+            <div>
+              <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Service Hours</div>
+              <span>7:00 AM – 10:30 PM (All Days)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright Bar -->
       <div class="footer-copy">
-        <p>&copy; 2026 Pattanam Karikalan Catering & Event.
-          <br> All Rights Reserved.
+        <p>&copy; 2026 Pattanam Karikalan Catering & Event. All Rights Reserved.</p>
+        <p style="color: var(--royal-maroon); font-weight: 600;">
+          <i class="fa-solid fa-crown text-gold" style="margin-right: 4px;"></i> Chozha Arasu Bhojanam
         </p>
       </div>
     </div>
