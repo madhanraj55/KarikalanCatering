@@ -38,10 +38,10 @@
 
       <ul class="nav-links" id="navLinks">
         <li><a href="#home" class="active">Home</a></li>
-        <li><a href="#showcase">Gallery</a></li>
-        <li><a href="#menus">Feast Menus</a></li>
-        <li><a href="#stories">Blogs</a></li>
+        <li><a href="#stories">Stories & Celebrations</a></li>
+        <li><a href="#menus">Royal Menus</a></li>
         <li><a href="#services">Services</a></li>
+        <li><a href="book-feast.html">Book Your Feast</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
 
@@ -91,7 +91,7 @@
       </p>
 
       <div class="hero-cta-group">
-        <a href="#contact" class="btn btn-primary">
+        <a href="book-feast.html" class="btn btn-primary">
           <i class="fa-solid fa-calendar-check"></i> Book Your Feast
         </a>
         <a href="https://wa.me/919894579444?text=Hello%20Pattanam%20Karikalan%20Catering,%20I%20would%20like%20to%20enquire%20for%20catering%20services"
@@ -127,91 +127,128 @@
     </div>
   </section>
 
-  <!-- Interactive Carousel Showcase Section -->
-  <section class="carousel-section" id="showcase">
+  <!-- Event Stories & Media Gallery Section (Live Feasts, VIP Moments, Displays) -->
+  <section class="stories-media-section" id="stories">
     <div class="container">
       <div style="text-align: center;">
         <div class="section-tag">
-          <i class="fa-solid fa-images"></i> Royal Presentation
+          <i class="fa-solid fa-camera-retro"></i> Live Event Moments
         </div>
-        <h2 class="section-title">The Grand Feast Experience</h2>
-        <p class="section-desc">
-          Swipe or navigate through our signature culinary setups, from authentic banana leaf dining to opulent banquet
-          arrangements.
-        </p>
+        <h2 class="section-title">Grand Wedding Stories & Celebrations</h2>
       </div>
 
-      <div class="carousel-container">
-        <!-- Prev & Next Controls -->
-        <button class="carousel-btn prev" id="carouselPrev" aria-label="Previous Slide">
+      <!-- Story Carousel Slider -->
+      <div class="story-slider-wrapper">
+        <button class="story-nav-btn prev" id="storyPrev" aria-label="Previous Stories">
           <i class="fa-solid fa-chevron-left"></i>
         </button>
-        <button class="carousel-btn next" id="carouselNext" aria-label="Next Slide">
+        <button class="story-nav-btn next" id="storyNext" aria-label="Next Stories">
           <i class="fa-solid fa-chevron-right"></i>
         </button>
 
-        <div class="carousel-track" id="carouselTrack">
-          <!-- Slide 1: Banana Leaf Feast -->
-          <div class="carousel-slide active">
-            <img src="images/traditional_meal.jpg" alt="Traditional Elai Sapadu">
-            <div class="slide-caption-card">
-              <span class="slide-tag">Imperial Dining</span>
-              <h3>Authentic Banana Leaf Elai Sapadu</h3>
-              <p>Served with auspicious hospitality, steaming pure ghee, fragrant paruppu, and 24 traditional South
-                Indian specialties.</p>
+        <div class="story-track" id="storyTrack">
+          <!-- Story Card 1: VIP Elai Virundhu -->
+          <div class="story-card" data-title="VIP Dignitary Elai Hospitality" data-badge="VIP Service"
+            data-desc="Honoring guests with imperial warmth, traditional banana leaf feasts, and attentive hospitality at grand political & celebrity gatherings.">
+            <div class="story-card-inner">
+              <img src="images/vip_elai_service.jpg" alt="VIP Dignitary Hospitality" loading="lazy">
+              <div class="story-card-overlay">
+                <span class="story-badge"><i class="fa-solid fa-star"></i> VIP Service</span>
+                <div class="story-card-info">
+                </div>
+              </div>
             </div>
           </div>
 
-          <!-- Slide 2: Royal Biryani -->
-          <div class="carousel-slide">
-            <img src="images/mutton_biryani.jpg" alt="Seeraga Samba Royal Biryani">
-            <div class="slide-caption-card">
-              <span class="slide-tag">Signature Non-Veg</span>
-              <br>
-              <h3>Seeragaa Samba Mutton Dum Biryani</h3>
-              <p>Wood-fired slow cooked biryani blended with native spices, succulent cuts, dalcha, and refreshing
-                pachadi.</p>
+          <!-- Story Card 2: Royal Reception Hospitality Team -->
+          <div class="story-card" data-title="Royal Uniformed Hospitality Team" data-badge="Event Hospitality"
+            data-desc="Over 100+ courteous, traditional silk-saree clad captains ensuring every wedding guest is welcomed like royalty.">
+            <div class="story-card-inner">
+              <img src="images/event_hospitality_team.png" alt="Royal Wedding Hospitality Team" loading="lazy">
+              <div class="story-card-overlay">
+                <span class="story-badge"><i class="fa-solid fa-heart"></i> Grand Welcome</span>
+                <div class="story-card-info">
+                </div>
+              </div>
             </div>
           </div>
 
-          <!-- Slide 3: Grand Wedding Buffet -->
-          <div class="carousel-slide">
-            <img src="https://images.unsplash.com/photo-1555244162-803834f70033?q=80&w=1400&auto=format&fit=crop"
-              alt="Wedding Buffet Setup">
-            <div class="slide-caption-card">
-              <span class="slide-tag">Royal Banquet</span>
-              <h3>Imperial Wedding Buffet Setup</h3>
-              <p>Opulent brass handis, polished copper vessels, and dedicated uniformed royal hospitality captains for
-                10,000+ guests.</p>
+          <!-- Story Card 3: Opulent Fruit & Vegetable Carvings -->
+          <div class="story-card" data-title="Opulent Banquet Fruit Carvings" data-badge="Decor & Carving"
+            data-desc="Grand decorative fruit carving centerpieces featuring majestic peacock and aquatic sculptures crafted live for wedding receptions.">
+            <div class="story-card-inner">
+              <img src="images/carving_buffet_display.png" alt="Grand Fruit Carving Stage Display" loading="lazy">
+              <div class="story-card-overlay">
+                <span class="story-badge"><i class="fa-solid fa-gem"></i> Buffet Art</span>
+                <div class="story-card-info">
+                </div>
+              </div>
             </div>
           </div>
 
-          <!-- Slide 4: Live Counters -->
-          <div class="carousel-slide">
-            <img src="images/crispy_dosa.jpg" alt="Live Dosa Counters">
-            <div class="slide-caption-card">
-              <span class="slide-tag">Interactive Stalls</span>
-              <h3>Live Hot Tiffin & Dosa Counters</h3>
-              <p>Crispy ghee roasts, fluffy thatte idlis, hot medu vadais, and artisanal chutneys freshly crafted live.
-              </p>
+          <!-- Story Card 4: Authentic Traditional Banana Leaf Feast -->
+          <div class="story-card" data-title="Authentic Multi-Course Elai Sapadu" data-badge="Signature Feast"
+            data-desc="Mouth-watering wedding leaf service featuring piping hot biryani, country chicken sukka, traditional gravies, and steamed idlis.">
+            <div class="story-card-inner">
+              <img src="images/authentic_banana_leaf_feast.jpg" alt="Traditional Banana Leaf Feast" loading="lazy">
+              <div class="story-card-overlay">
+                <span class="story-badge"><i class="fa-solid fa-crown"></i> Authentic Taste</span>
+                <div class="story-card-info">
+                </div>
+              </div>
             </div>
           </div>
 
-          <!-- Slide 5: Traditional Sweets -->
-          <div class="carousel-slide">
-            <img src="images/halwa_payasam.jpg" alt="Royal Sweets & Halwa">
-            <div class="slide-caption-card">
-              <span class="slide-tag">Festive Desserts</span>
-              <h3>Ghee Halwa & Elaneer Payasam</h3>
-              <p>Melt-in-mouth Tirunelveli wheat halwa, tender coconut payasam, and royal Bengali sweets to conclude the
-                feast.</p>
+          <!-- Story Card 5: VIP Event Video (Hon. Edappadi K. Palaniswami Feast) -->
+          <div class="story-card story-video-card" data-type="video" data-video="videos/edapaddi.mp4"
+            data-title="VIP Dignitary Feast Celebration" data-badge="VIP Event Video"
+            data-desc="Distinguished moments serving Hon. Edappadi K. Palaniswami and esteemed VIP guests with grand Kongu hospitality and authentic royal feast delicacies.">
+            <div class="story-card-inner">
+              <video src="videos/edapaddi.mp4" autoplay loop muted playsinline preload="metadata"></video>
+              <div class="story-card-overlay">
+                <span class="story-badge"><i class="fa-solid fa-circle-play"></i> VIP Event Reel</span>
+                <div class="story-card-info">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Story Card 6: Live Catering Operations Video -->
+          <div class="story-card story-video-card" data-type="video" data-video="videos/video1.mp4"
+            data-title="Grand Wedding Banquet Live Service" data-badge="Live Feast Reel"
+            data-desc="Live glimpse into our grand wedding banquet operations, sizzling live counters, and imperial guest hospitality in full swing.">
+            <div class="story-card-inner">
+              <video src="videos/video1.mp4" autoplay loop muted playsinline preload="metadata"></video>
+              <div class="story-card-overlay">
+                <span class="story-badge"><i class="fa-solid fa-circle-play"></i> Live Service Reel</span>
+                <div class="story-card-info">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Story Card 7: Digital LED Standee & Reception Brand Display -->
+          <div class="story-card" data-title="Digital LED Welcome Display & Brand Board" data-badge="Royal Branding"
+            data-desc="High-definition LED vertical display standee welcoming guests at prestigious banquet halls with Chozha Arasu Bhojanam hospitality.">
+            <div class="story-card-inner">
+              <img src="images/digital_kiosk_standee.jpg" alt="Digital LED Standee Display" loading="lazy">
+              <div class="story-card-overlay">
+                <span class="story-badge"><i class="fa-solid fa-display"></i> LED Display</span>
+                <div class="story-card-info">
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Carousel Pagination Dots -->
-      <div class="carousel-dots" id="carouselDots"></div>
+      <!-- Book Your Feast Action Button -->
+      <div style="text-align: center; margin-top: 35px;">
+        <a href="book-feast.html" class="btn btn-primary"
+          style="padding: 14px 36px; font-size: 1.05rem; box-shadow: 0 10px 25px rgba(217, 119, 6, 0.4);">
+          <i class="fa-solid fa-calendar-check"></i> Book Your Feast
+        </a>
+      </div>
     </div>
   </section>
 
@@ -222,9 +259,9 @@
         <div class="section-tag">
           <i class="fa-solid fa-utensils"></i> Auspicious Virundhu
         </div>
-        <h2 class="section-title">Ceremonial Feast Menus</h2>
+        <h2 class="section-title">Ceremonial Royal Menus</h2>
         <p class="section-desc">
-          Click any session below to view the complete authentic dish lineup curated for your celebration.
+          Click session below to view the complete authentic dish lineup curated for your celebration.
         </p>
       </div>
 
@@ -296,124 +333,18 @@
           </div>
         </a>
       </div>
-    </div>
-  </section>
 
-  <!-- Event Stories & Media Gallery Section (Live Feasts, VIP Moments, Displays) -->
-  <section class="stories-media-section" id="stories">
-    <div class="container">
-      <div style="text-align: center;">
-        <div class="section-tag">
-          <i class="fa-solid fa-camera-retro"></i> Live Event Moments
-        </div>
-        <h2 class="section-title">Grand Wedding Stories & Celebrations</h2>
-      </div>
-
-      <!-- Story Carousel Slider -->
-      <div class="story-slider-wrapper">
-        <button class="story-nav-btn prev" id="storyPrev" aria-label="Previous Stories">
-          <i class="fa-solid fa-chevron-left"></i>
-        </button>
-        <button class="story-nav-btn next" id="storyNext" aria-label="Next Stories">
-          <i class="fa-solid fa-chevron-right"></i>
-        </button>
-
-        <div class="story-track" id="storyTrack">
-          <!-- Story Card 1: VIP Elai Virundhu -->
-          <div class="story-card" data-title="VIP Dignitary Elai Hospitality" data-badge="VIP Service"
-            data-desc="Honoring guests with imperial warmth, traditional banana leaf feasts, and attentive hospitality at grand political & celebrity gatherings.">
-            <div class="story-card-inner">
-              <img src="images/vip_elai_service.jpg" alt="VIP Dignitary Hospitality" loading="lazy">
-              <div class="story-card-overlay">
-                <span class="story-badge"><i class="fa-solid fa-star"></i> VIP Service</span>
-                <div class="story-card-info">
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Story Card 2: Royal Reception Hospitality Team -->
-          <div class="story-card" data-title="Royal Uniformed Hospitality Team" data-badge="Event Hospitality"
-            data-desc="Over 100+ courteous, traditional silk-saree clad captains ensuring every wedding guest is welcomed like royalty.">
-            <div class="story-card-inner">
-              <img src="images/event_hospitality_team.png" alt="Royal Wedding Hospitality Team" loading="lazy">
-              <div class="story-card-overlay">
-                <span class="story-badge"><i class="fa-solid fa-heart"></i> Grand Welcome</span>
-                <div class="story-card-info">
-                
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Story Card 3: Opulent Fruit & Vegetable Carvings -->
-          <div class="story-card" data-title="Opulent Banquet Fruit Carvings" data-badge="Decor & Carving"
-            data-desc="Grand decorative fruit carving centerpieces featuring majestic peacock and aquatic sculptures crafted live for wedding receptions.">
-            <div class="story-card-inner">
-              <img src="images/carving_buffet_display.png" alt="Grand Fruit Carving Stage Display" loading="lazy">
-              <div class="story-card-overlay">
-                <span class="story-badge"><i class="fa-solid fa-gem"></i> Buffet Art</span>
-                <div class="story-card-info">
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Story Card 4: Authentic Traditional Banana Leaf Feast -->
-          <div class="story-card" data-title="Authentic Multi-Course Elai Sapadu" data-badge="Signature Feast"
-            data-desc="Mouth-watering wedding leaf service featuring piping hot biryani, country chicken sukka, traditional gravies, and steamed idlis.">
-            <div class="story-card-inner">
-              <img src="images/authentic_banana_leaf_feast.jpg" alt="Traditional Banana Leaf Feast" loading="lazy">
-              <div class="story-card-overlay">
-                <span class="story-badge"><i class="fa-solid fa-crown"></i> Authentic Taste</span>
-                <div class="story-card-info">
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Story Card 5: Live Hot Counters & Dosa Hubs -->
-          <div class="story-card" data-title="Interactive Live Food Counters" data-badge="Live Kitchen"
-            data-desc="Crispy ghee dosas, thatte idlis, and hot live parotta stations served sizzling directly from pan to plate.">
-            <div class="story-card-inner">
-              <img src="images/crispy_dosa.jpg" alt="Live Hot Counters" loading="lazy">
-              <div class="story-card-overlay">
-                <span class="story-badge"><i class="fa-solid fa-fire"></i> Live Stalls</span>
-                <div class="story-card-info">
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Story Card 6: Ceremonial Royal Feast Preparations -->
-          <div class="story-card" data-title="Traditional Pure Ghee Delicacies" data-badge="Festive Feasts"
-            data-desc="Prepared by master Kongu chefs using firewood hearths and secret hereditary spice recipes for unforgettable taste.">
-            <div class="story-card-inner">
-              <img src="images/traditional_meal.jpg" alt="Traditional Festive Delicacies" loading="lazy">
-              <div class="story-card-overlay">
-                <span class="story-badge"><i class="fa-solid fa-utensils"></i> Pure Heritage</span>
-                <div class="story-card-info">
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Story Card 7: Digital LED Standee & Reception Brand Display -->
-          <div class="story-card" data-title="Digital LED Welcome Display & Brand Board" data-badge="Royal Branding"
-            data-desc="High-definition LED vertical display standee welcoming guests at prestigious banquet halls with Chozha Arasu Bhojanam hospitality.">
-            <div class="story-card-inner">
-              <img src="images/digital_kiosk_standee.jpg" alt="Digital LED Standee Display" loading="lazy">
-              <div class="story-card-overlay">
-                <span class="story-badge"><i class="fa-solid fa-display"></i> LED Display</span>
-                <div class="story-card-info">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <!-- Book Your Feast from Menus -->
+      <div style="text-align: center; margin-top: 35px;">
+        <a href="book-feast.html" class="btn btn-primary"
+          style="padding: 14px 36px; font-size: 1.05rem; box-shadow: 0 10px 25px rgba(217, 119, 6, 0.4);">
+          <i class="fa-solid fa-calendar-check"></i> Book Your Feast
+        </a>
       </div>
     </div>
   </section>
+
+
 
   <!-- Story Lightbox Modal -->
   <div class="story-modal" id="storyModal" aria-hidden="true" role="dialog">
@@ -424,14 +355,12 @@
       </button>
       <div class="story-modal-media">
         <img src="" alt="Story media preview" id="modalStoryImg">
+        <video id="modalStoryVideo" controls playsinline style="display: none;"></video>
       </div>
       <div class="story-modal-details">
         <span class="story-badge" id="modalStoryBadge"><i class="fa-solid fa-star"></i> VIP Service</span>
-        <h3 id="modalStoryTitle">Event Story</h3>
-        <p id="modalStoryDesc">Story details and highlights.</p>
         <div style="margin-top: 20px;">
-          <a href="https://wa.me/919894579444?text=Hello%20Karikalan%20Catering,%20I%20saw%20your%20event%20stories%20and%20would%20like%20to%20book%20for%20our%20celebration."
-            target="_blank" rel="noopener noreferrer" class="btn btn-primary"
+          <a href="book-feast.html" target="_blank" rel="noopener noreferrer" class="btn btn-primary"
             style="display: inline-flex; align-items: center; gap: 8px; padding: 10px 22px;">
             <i class="fa-brands fa-whatsapp"></i> Book This Service For Your Event
           </a>
@@ -665,6 +594,9 @@
   </section>
 
   <!-- Floating Action Buttons -->
+  <a href="book-feast.html" class="book-feast-float" aria-label="Book Your Feast" title="Book Your Feast">
+    <i class="fa-solid fa-calendar-check"></i>
+  </a>
   <button id="scrollTopBtn" class="floating-btn scroll-top-btn" aria-label="Scroll to top" title="Scroll to top">
     <i class="fa-solid fa-arrow-up"></i>
   </button>
@@ -706,22 +638,23 @@
           <h4>Quick Links</h4>
           <ul class="footer-links-list">
             <li><a href="#home"><i class="fa-solid fa-angle-right"></i> Home</a></li>
-            <li><a href="#heritage"><i class="fa-solid fa-angle-right"></i> Chola Heritage</a></li>
-            <li><a href="#showcase"><i class="fa-solid fa-angle-right"></i> Grand Gallery</a></li>
+            <li><a href="#home"><i class="fa-solid fa-angle-right"></i> Chola Heritage</a></li>
+            <li><a href="#stories"><i class="fa-solid fa-angle-right"></i> Stories & Celebrations</a></li>
             <li><a href="breakfast-menu.html"><i class="fa-solid fa-angle-right"></i> Event Services</a></li>
+            <li><a href="book-feast.html"><i class="fa-solid fa-angle-right"></i> Book Your Feast</a></li>
             <li><a href="#contact"><i class="fa-solid fa-angle-right"></i> Contact & Location</a></li>
           </ul>
         </div>
 
         <!-- Right Side Column 2: Feast Menus -->
         <div class="footer-col">
-          <h4>Feast Menus</h4>
+          <h4>Royal Menus</h4>
           <ul class="footer-links-list">
             <li><a href="breakfast-menu.html"><i class="fa-solid fa-angle-right"></i> Morning Breakfast</a></li>
             <li><a href="lunch-menu.html"><i class="fa-solid fa-angle-right"></i> Afternoon Lunch</a></li>
             <li><a href="dinner-menu.html"><i class="fa-solid fa-angle-right"></i> Evening Dinner & Buffet</a></li>
             <li><a href="#services"><i class="fa-solid fa-angle-right"></i> Wedding Reception Buffet</a></li>
-            <li><a href="#contact"><i class="fa-solid fa-angle-right"></i> Muhurtham Pre-Booking</a></li>
+            <li><a href="book-feast.html"><i class="fa-solid fa-angle-right"></i> Book Your Feast</a></li>
             <li><a href="#contact"><i class="fa-solid fa-angle-right"></i> Tamil Nadu Coverage</a></li>
           </ul>
         </div>
